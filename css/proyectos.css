@@ -1,0 +1,118 @@
+/* ===== ESTILOS DE PROYECTOS ===== */
+/* Lo usan proyectos.html y las páginas de detalle */
+
+/* ----- Contenedor de tarjetas ----- */
+.contenedor-tarjetas {
+    display: flex;
+    flex-wrap: wrap;                /* si no caben, pasan a la siguiente fila */
+    justify-content: center;
+    gap: 30px;
+}
+
+/* ----- Tarjeta ----- */
+.tarjeta {
+    width: 300px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    overflow: hidden;               /* la imagen respeta las esquinas redondeadas */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.tarjeta:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.25);
+}
+
+.tarjeta-imagen {
+    display: block;
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    transition: transform 0.4s;
+}
+
+.tarjeta:hover .tarjeta-imagen {
+    transform: scale(1.08);         /* la imagen se acerca un poco */
+}
+
+.tarjeta-cuerpo {
+    padding: 20px;
+}
+
+.tarjeta-cuerpo h3 {
+    margin-bottom: 10px;
+}
+
+/* ----- Etiquetas de tecnologías ----- */
+.etiqueta {
+    display: inline-block;
+    background-color: #eaf2fd;
+    color: #1b5fb3;
+    padding: 3px 12px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    margin: 0 4px 6px 0;
+}
+
+/* ----- Botón pequeño ----- */
+.boton-pequeno {
+    padding: 8px 20px;
+    font-size: 0.9rem;
+}
+
+/* ===== PÁGINAS DE DETALLE (proyecto1, proyecto2, proyecto3) ===== */
+
+.detalle {
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+}
+
+.detalle-imagen {
+    width: 55%;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.ficha {
+    flex: 1;
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 12px;
+    border-top: 5px solid #2a7de1;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.ficha h3 {
+    margin-bottom: 15px;
+}
+
+.ficha dt {
+    font-weight: bold;
+    color: #1b2a49;
+    margin-top: 12px;
+}
+
+.ficha dd {
+    margin-left: 0;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #e0e6ee;
+}
+
+.funciones {
+    padding-left: 20px;
+}
+
+.funciones li {
+    margin-bottom: 8px;
+}
+
+.navegacion-proyectos {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1000px;
+    margin: 30px auto 0 auto;
+    padding: 0 20px;
+}
