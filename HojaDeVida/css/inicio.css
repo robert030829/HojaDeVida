@@ -1,0 +1,115 @@
+/*SECCION PRINCIPAL*/
+.portada{
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  gap: 50px;
+background-color: #ffff;
+padding: 70px 40px;
+}
+
+.foto-perfil{
+    width: 280px;
+    height: 280px;
+    object-fit: cover;/*recorta la foto sin deformatrla*/
+    border-radius: 50%;/*la vuelve circula*/
+    border: 6px solid rgba(0, 0, 0, 0.25 green, blue, alpha);
+    transition: transform 0.4s;
+}
+
+.foto-perfil:hover{
+    transform: scale(1.05);
+}
+
+.portada-texto{
+    max-width: 550px;
+}
+    .saludo{
+        color: #2a7de1;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 0;
+    }
+
+    .portada-texto h3{
+        margin-bottom: 15px;
+    }
+
+    .botones{
+        margin-top: 25px;
+    }
+
+    .botones.boton{
+        margin-right: 10px;
+    }
+
+    /*DATOS DESTACADOS*/
+    .destacados{
+        text-align: center;
+        padding: 60px 40px 20px 40px;
+    }
+
+    .contenedor-datos{
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+    }
+
+    .dato{
+        background-color: #ffff;
+        width: 220px;
+        padding: 30px 20px;
+        border-radius: 12px;
+        border-top: 5px solid #2a7de1;
+        box-shadow: 0.4px 10px, rgba(0, 0, 0, 0.1 green, blue, alpha);
+        transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .dato:hover{
+        transform: translateY(-8px);
+        box-shadow: 0.10px 20px rgba(42, 125, 225, 0.2 green, blue, alpha);
+    }
+
+    .dato h3{
+        font-size: 2.8rem;
+        margin-bottom: 5px;
+    }
+
+    .dato p{
+        margin-bottom: 0;
+    }
+
+    /*ACCESO A OTRAS PAGINAS*/
+    .accesos{
+        text-align: center;
+        padding: 40px;
+    }
+
+    .lista-accesos{
+        list-style: none;
+    }
+
+    .lista-accesos li{
+        margin-bottom: 12px;
+    }
+    
+    .lista-accesos a{
+        display: inline-block;
+        background-color: #ffff;
+        padding: 12px 30px;
+        border-radius: 8px;
+        border-left: 5px solid #2a7de1;
+        box-shadow: 0.2px 6px rgba(42, 125, 225, 0.2 green, blue, alpha);
+        transition: background-color 0.3s, color 0.3s;
+    }
+
+    .lista-accesos a:hover{
+        background-color: #2a7de1;
+        color: #ffff;
+        text-decoration: none;
+    }
+
+
+
+
+

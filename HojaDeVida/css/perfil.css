@@ -1,0 +1,131 @@
+/* ===== ESTILOS DE LA PÁGINA DE PERFIL (perfil.html) ===== */
+
+/* ----- Datos personales + biografía lado a lado ----- */
+.presentacion {
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+}
+
+.tarjeta-datos {
+    width: 300px;
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 12px;
+    border-top: 5px solid #2a7de1;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.foto-pequena {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #2a7de1;
+}
+
+.tarjeta-datos figcaption {
+    font-weight: bold;
+    margin: 10px 0 20px 0;
+    color: #1b2a49;
+}
+
+.tarjeta-datos h3 {
+    margin-bottom: 15px;
+}
+
+.tarjeta-datos dl {
+    text-align: left;
+}
+
+.tarjeta-datos dt {
+    font-weight: bold;
+    color: #1b2a49;
+    margin-top: 12px;
+}
+
+.tarjeta-datos dd {
+    margin-left: 0;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #e0e6ee;
+}
+
+/* ----- Biografía ----- */
+.biografia {
+    flex: 1;                         /* ocupa todo el espacio restante */
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+blockquote {
+    background-color: #eaf2fd;
+    border-left: 5px solid #2a7de1;
+    padding: 15px 20px;
+    margin-top: 20px;
+    font-style: italic;
+    color: #1b2a49;
+}
+
+/* ----- Tabla de habilidades ----- */
+.tabla-habilidades {
+    width: 100%;
+    border-collapse: collapse;       /* une los bordes de las celdas */
+    background-color: #ffffff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.tabla-habilidades caption {
+    caption-side: bottom;            /* el título de la tabla va abajo */
+    padding: 10px;
+    font-style: italic;
+    color: #666666;
+}
+
+.tabla-habilidades th {
+    background-color: #1b2a49;
+    color: #ffffff;
+    padding: 14px;
+    text-align: left;
+}
+
+.tabla-habilidades td {
+    padding: 12px 14px;
+    border-bottom: 1px solid #e0e6ee;
+}
+
+/* Filas con color alternado */
+.tabla-habilidades tr:nth-child(even) {
+    background-color: #f0f5fb;
+}
+
+/* Fila resaltada al pasar el mouse */
+.tabla-habilidades tbody tr:hover {
+    background-color: #d6e6fb;
+}
+
+/* ----- Habilidades personales e idiomas ----- */
+.dos-columnas {
+    display: flex;
+    gap: 30px;
+}
+
+.columna {
+    flex: 1;
+    background-color: #ffffff;
+    padding: 25px 30px;
+    border-radius: 12px;
+    border-left: 5px solid #2a7de1;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.columna ul,
+.columna ol {
+    padding-left: 20px;
+}
+
+.columna li {
+    margin-bottom: 8px;
+}
